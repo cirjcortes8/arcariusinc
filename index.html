@@ -49,14 +49,14 @@
         
         .container { max-width: 750px; margin: -40px auto 60px auto; padding: 40px 20px; background: white; border-radius: 12px; box-shadow: 0 20px 50px rgba(0,0,0,0.06); width: 85%; }
         
-        /* Forces Service Title to stay on one line on mobile */
-        .section-h2 { 
-            font-size: 5.2vw; 
-            margin-bottom: 20px; 
-            color: var(--deep-navy); 
-            white-space: nowrap; 
-            font-weight: 700;
-        }
+        /* This makes the second line elegant and ensures it stays on one line */
+.subtitle {
+    font-size: 1.2rem; /* Was likely 1.5 or 2.0; this brings it down to a "Boutique" size */
+    font-weight: 300;  /* Makes the letters thinner and more expensive-looking */
+    letter-spacing: 1px;
+    margin-top: 5px;
+    color: #bdc3c7;    /* A soft platinum grey so it doesn't compete with the Navy brand */
+}
 
         .service-text { font-size: 1.1rem; line-height: 1.6; color: #444; margin-bottom: 25px; }
 
