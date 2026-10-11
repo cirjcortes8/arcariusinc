@@ -3,160 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arcarius Inc | NYC Tax Strategy & S-Corp Optimization</title>
+    <title>Arcarius Inc | Boutique Tax Strategy & Entity Formation</title>
     <style>
-  header {
-    background-color: #001f3f; /* Deep Navy */
-    padding: 40px 20px;
-    text-align: center;
-    border-bottom: 2px solid #bdc3c7; /* Platinum Line */
-  }
-
-  h1 {
-    font-family: 'Playfair Display', serif; /* Or any serif for authority */
-    font-size: 2.8rem;
-    color: #ffffff;
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-
-  h2 {
-    font-family: 'Lato', sans-serif; /* Clean sans-serif for the subtitle */
-    font-size: 1.1rem; /* This is the fix: smaller and more elite */
-    color: #bdc3c7; /* Platinum grey */
-    font-weight: 300;
-    margin-top: 10px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-  }
-</style>
-        :root { 
-            --deep-navy: #133a4c; 
-            --platinum: #d1d5db; 
-            --paper-white: #f7f5f2;
-            --forest-green: #2d5a27; 
-            --soft-teal: #8bc2c7;
+        :root {
+            --deep-navy: #0b3c4d;
+            --platinum: #d1d5db;
+            --copper: #c87d55;
         }
 
-        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; background-color: var(--paper-white); color: var(--deep-navy); text-align: center; overflow-x: hidden; }
-        
-        header { background: var(--deep-navy); padding: 80px 20px; color: var(--paper-white); }
-        
-        /* Forces Brand Name to stay on one line on mobile */
-        .brand-name { 
-            font-size: 8.5vw; 
-            text-transform: uppercase; 
-            letter-spacing: 5px; 
-            margin: 0; 
-            font-weight: 700; 
-            color: var(--paper-white);
-            white-space: nowrap; 
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
 
-        /* Responsive Headline */
-        h1 { 
-            font-size: 1.8rem; 
-            margin: 30px auto 0 auto; 
-            font-weight: 700; 
-            max-width: 900px; 
-            line-height: 1.3; 
-            color: var(--paper-white);
+        body {
+            background-color: #f7f9f6;
+            color: #1a2b3c;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
-        /* Desktop Adjustments */
-        @media (min-width: 768px) {
-            .brand-name { font-size: 3.5rem; letter-spacing: 8px; }
-            h1 { font-size: 2.8rem; }
-            .section-h2 { font-size: 2.2rem !important; }
+        /* Header Section */
+        header {
+            background-color: #001f3f;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 2px solid #bdc3c7;
         }
 
-        .tagline { color: var(--soft-teal); font-size: 1rem; margin-top: 15px; font-weight: 300; letter-spacing: 1px; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.5; }
-        
-        .container { max-width: 750px; margin: -40px auto 60px auto; padding: 40px 20px; background: white; border-radius: 12px; box-shadow: 0 20px 50px rgba(0,0,0,0.06); width: 85%; }
-        
-        /* This makes the second line elegant and ensures it stays on one line */
-.subtitle {
-    font-size: 1.2rem; /* Was likely 1.5 or 2.0; this brings it down to a "Boutique" size */
-    font-weight: 300;  /* Makes the letters thinner and more expensive-looking */
-    letter-spacing: 1px;
-    margin-top: 5px;
-    color: #bdc3c7;    /* A soft platinum grey so it doesn't compete with the Navy brand */
-}
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            color: #ffffff;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
 
-        .service-text { font-size: 1.1rem; line-height: 1.6; color: #444; margin-bottom: 25px; }
+        header h2 {
+            font-family: 'Lato', sans-serif;
+            font-size: 1.1rem;
+            color: #bdc3c7;
+            font-weight: 300;
+            margin-top: 10px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
 
-        .cta-btn { 
-            background: var(--forest-green); 
-            color: white; 
-            padding: 18px 30px; 
-            text-decoration: none; 
-            display: inline-block; 
-            border-radius: 50px; 
-            font-weight: bold; 
-            text-transform: uppercase; 
-            letter-spacing: 1px; 
-            transition: 0.3s;
-            margin: 15px 0;
+        /* Introductory Heading */
+        .intro {
+            text-align: center;
+            padding: 60px 20px 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .intro h2 {
+            font-size: 2.2rem;
+            color: var(--deep-navy);
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        /* Main Card Container */
+        .card-container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Copper Card Styling */
+        .card {
+            background-color: #ffffff;
+            border-top: 4px solid var(--copper);
+            border-radius: 16px;
+            padding: 40px 30px;
+            max-width: 550px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        /* Service List Font Styling */
+        .service-list {
+            list-style: none;
+            margin: 10px 0 28px;
+            text-align: center;
+        }
+
+        .service-list li {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #1a2b3c;
+            margin: 16px 0;
+        }
+
+        /* Compact, Scaled Button */
+        .cta-button {
+            display: inline-block;
+            background-color: var(--copper);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
             font-size: 0.85rem;
+            letter-spacing: 0.8px;
+            padding: 10px 24px;
+            border-radius: 22px;
+            margin-top: 8px;
+            transition: background-color 0.2s ease, transform 0.2s ease;
         }
-        .cta-btn:hover { transform: translateY(-3px); background: #1e3d1a; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
 
-        .specialties { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 30px 0; padding-top: 30px; border-top: 1px solid #eee; }
-        
-        /* Fix for white borders on badges */
-        .badge { 
-            width: 90px; 
-            height: auto; 
-            filter: grayscale(100%); 
-            opacity: 0.5; 
-            mix-blend-mode: multiply; 
-            transition: 0.4s;
+        .cta-button:hover {
+            background-color: #a85f38;
+            transform: translateY(-2px);
         }
-        .badge:hover { opacity: 1; filter: grayscale(0%); }
-        
-        .cert-text { font-size: 0.85rem; color: #666; font-style: italic; max-width: 500px; margin: 0 auto 40px auto; line-height: 1.5; padding: 0 10px; }
 
-        footer { padding: 60px 20px; background: #f0f0f0; font-size: 0.85rem; color: #777; }
-        footer strong { color: var(--deep-navy); }
+        /* 4-Badge Container Grid (Images Only) */
+        .badges-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin: 40px auto 60px;
+            padding: 0 20px;
+            max-width: 900px;
+        }
+
+        .badge-item {
+            width: 150px;
+            height: auto;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+            opacity: 0.95;
+        }
+
+        .badge-item:hover {
+            transform: translateY(-3px);
+            opacity: 1;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: var(--deep-navy);
+            color: #8cb8c6;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: auto;
+            font-size: 0.95rem;
+        }
+
+        footer strong {
+            color: #ffffff;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            font-size: 0.8rem;
+            color: #5c8795;
+            margin-top: 15px;
+        }
     </style>
 </head>
 <body>
 
+    <!-- Header Section -->
     <header>
-        <div class="brand-name">ARCARIUS INC</div>
-        <h1>Tax Strategy & S-Corp Optimization for NYC Business Owners & 1099 Professionals</h1>
-        <p class="tagline">Direct, high-impact tax strategy for NYC small business owners, freelancers, and high-income earners. We don’t just file your past, we structure your future.</p>
-        <br>
-        <a href="https://app.acuityscheduling.com/schedule.php?owner=38924238" class="cta-btn" style="background: var(--platinum); color: var(--deep-navy);">Book Free Tax Strategy</a>
+        <h1>Arcarius Inc</h1>
+        <h2>Boutique S-Corp Strategy & Tax Compliance for Modern Founders</h2>
     </header>
 
-    <div class="container">
-        <div class="section-h2">Expert Filing. Boutique Strategy.</div>
-        
-        <p class="service-text">
-            Professional Tax Filing & Strategy starting at <strong>$200</strong>.<br>
-            Most clients save more than they pay through proper tax structuring and planning.
-        </p>
-        
-        <a href="https://app.acuityscheduling.com/schedule.php?owner=38924238" class="cta-btn">Book Free Tax Strategy Call</a>
+    <!-- Introductory Heading -->
+    <section class="intro">
+        <h2>Expert Filing. Boutique Strategy.</h2>
+        <p>Direct, high-impact tax engineering for firms and high-earning professionals. We don't just file your past; we plan your future.</p>
+    </section>
 
-        <div class="specialties">
-            <img src="business.png" alt="Business Tax" class="badge">
-            <img src="crypto.png" alt="Crypto Tax" class="badge">
-            <img src="equity.png" alt="Equity Comp" class="badge">
-            <img src="planning.png" alt="Tax Planning" class="badge">
+    <!-- Main Services Card -->
+    <main class="card-container">
+        <div class="card">
+            <ul class="service-list">
+                <li>Individual & Business Tax Returns</li>
+                <li>Entity Formation (LLC, S-Corp, C-Corp)</li>
+                <li>Official Notary Public Services</li>
+            </ul>
+
+            <a href="mailto:ccortes@arcariusinc.com?subject=Rate%20%26%20Service%20Inquiry%20-%20Arcarius%20Inc" class="cta-button">
+                INQUIRE ABOUT RATES & SERVICES
+            </a>
         </div>
+    </main>
 
-        <p class="cert-text">
-            Intuit Academy Certified in Business Tax, Tax Planning, and Strategy.
-        </p>
-    </div>
+    <!-- 4 Badge Images Section (Clean & Label-Free) -->
+    <section class="badges-container">
+        <img src="badge-business-tax.png" alt="Business Tax Specialty" class="badge-item">
+        <img src="badge-crypto-tax.png" alt="Cryptocurrency Tax Specialty" class="badge-item">
+        <img src="badge-equity.tax.png" alt="Equity Compensation Tax Specialty" class="badge-item">
+        <img src="badge-planning-tax.png" alt="Tax Planning Strategies Specialty" class="badge-item">
+    </section>
 
+    <!-- Footer -->
     <footer>
-        <strong>ARCARIUS INC</strong><br>
-        Boutique Tax Strategy & Compliance<br><br>
-        &copy; 2026 | <a href="mailto:ccortes@arcariusinc.com" style="color: var(--deep-navy); text-decoration: none; font-weight: bold;">ccortes@arcariusinc.com</a>
+        <p><strong>Arcarius Inc</strong> | Boutique Tax Strategy</p>
+        <p style="margin-top: 8px;">Questions? <a href="mailto:ccortes@arcariusinc.com">ccortes@arcariusinc.com</a></p>
+        <p class="copyright">© 2026 Arcarius Inc | Authorized IRS e-file Provider (Pending)</p>
     </footer>
 
 </body>
