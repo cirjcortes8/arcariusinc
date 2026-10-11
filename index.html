@@ -6,17 +6,60 @@
     <title>Arcarius Inc | Boutique Tax Strategy & Entity Formation</title>
     <style>
         :root {
-            --deep-navy: #0b3c4d;
-            --platinum: #d1d5db;
-            --copper: #c87d55;
-        }
+  --bg-dark: #133a4b;
+  --text-primary: #ffffff;
+  --text-secondary: #a1b9c5;
+  --btn-bg: #d1d7df;
+  --btn-text: #133a4b;
+  --font-main: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        }
+body {
+  background-color: var(--bg-dark);
+  font-family: var(--font-main);
+  color: var(--text-primary);
+}
+
+/* Hero / Header Title */
+h1, .hero-title {
+  font-family: var(--font-main);
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+/* Subtitle / Description */
+p.subtitle, .hero-subtitle {
+  font-family: var(--font-main);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  letter-spacing: 0.02em;
+  margin-bottom: 2rem;
+}
+
+/* Primary Action Button */
+.btn-primary, button {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  font-family: var(--font-main);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
 
         body {
             background-color: #f7f9f6;
