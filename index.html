@@ -1,1 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcarius Inc | Boutique Tax Strategy & Entity Formation</title>
+    <style>
+        :root {
+            --deep-navy: #0b3c4d;
+            --platinum: #d1d5db;
+            --copper: #c87d55;
+        }
 
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f7f9f6;
+            color: #1a2b3c;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #001f3f;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 2px solid #bdc3c7;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            color: #ffffff;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header h2 {
+            font-family: 'Lato', sans-serif;
+            font-size: 1.1rem;
+            color: #bdc3c7;
+            font-weight: 300;
+            margin-top: 10px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        /* Introductory Heading */
+        .intro {
+            text-align: center;
+            padding: 60px 20px 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .intro h2 {
+            font-size: 2.2rem;
+            color: var(--deep-navy);
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        /* Main Card Container */
+        .card-container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Copper Card Styling */
+        .card {
+            background-color: #ffffff;
+            border-top: 4px solid var(--copper);
+            border-radius: 16px;
+            padding: 40px 30px;
+            max-width: 550px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        /* Service List Font Styling */
+        .service-list {
+            list-style: none;
+            margin: 10px 0 28px;
+            text-align: center;
+        }
+
+        .service-list li {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #1a2b3c;
+            margin: 16px 0;
+        }
+
+        /* Compact, Scaled Button */
+        .cta-button {
+            display: inline-block;
+            background-color: var(--copper);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 0.8px;
+            padding: 10px 24px;
+            border-radius: 22px;
+            margin-top: 8px;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #a85f38;
+            transform: translateY(-2px);
+        }
+
+        /* 4-Badge Container Grid (Images Only) */
+        .badges-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin: 40px auto 60px;
+            padding: 0 20px;
+            max-width: 900px;
+        }
+
+        .badge-item {
+            width: 150px;
+            height: auto;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+            opacity: 0.95;
+        }
+
+        .badge-item:hover {
+            transform: translateY(-3px);
+            opacity: 1;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: var(--deep-navy);
+            color: #8cb8c6;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: auto;
+            font-size: 0.95rem;
+        }
+
+        footer strong {
+            color: #ffffff;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            font-size: 0.8rem;
+            color: #5c8795;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Arcarius Inc</h1>
+        <h2>Boutique S-Corp Strategy & Tax Compliance for Modern Founders</h2>
+    </header>
+
+    <!-- Introductory Heading -->
+    <section class="intro">
+        <h2>Expert Filing. Boutique Strategy.</h2>
+        <p>Direct, high-impact tax engineering for firms and high-earning professionals. We don't just file your past; we plan your future.</p>
+    </section>
+
+    <!-- Main Services Card -->
+    <main class="card-container">
+        <div class="card">
+            <ul class="service-list">
+                <li>Individual & Business Tax Returns</li>
+                <li>Entity Formation (LLC, S-Corp, C-Corp)</li>
+                <li>Official Notary Public Services</li>
+            </ul>
+
+            <a href="mailto:ccortes@arcariusinc.com?subject=Rate%20%26%20Service%20Inquiry%20-%20Arcarius%20Inc" class="cta-button">
+                INQUIRE ABOUT RATES & SERVICES
+            </a>
+        </div>
+    </main>
+
+    <!-- 4 Badge Images Section (Clean & Label-Free) -->
+    <section class="badges-container">
+        <img src="badge-business-tax.png" alt="Business Tax Specialty" class="badge-item">
+        <img src="badge-crypto-tax.png" alt="Cryptocurrency Tax Specialty" class="badge-item">
+        <img src="badge-equity.tax.png" alt="Equity Compensation Tax Specialty" class="badge-item">
+        <img src="badge-planning-tax.png" alt="Tax Planning Strategies Specialty" class="badge-item">
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>Arcarius Inc</strong> | Boutique Tax Strategy</p>
+        <p style="margin-top: 8px;">Questions? <a href="mailto:ccortes@arcariusinc.com">ccortes@arcariusinc.com</a></p>
+        <p class="copyright">© 2026 Arcarius Inc | Authorized IRS e-file Provider (Pending)</p>
+    </footer>
+
+</body>
+</html>
