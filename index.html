@@ -6,128 +6,60 @@
     <title>Arcarius Inc | Boutique Tax Strategy & Entity Formation</title>
     <style>
         :root {
-            --deep-navy: #0b3c4d;
-            --platinum: #d1d5db;
-            --copper: #c87d55;
-        }
+  --bg-dark: #133a4b;
+  --text-primary: #ffffff;
+  --text-secondary: #a1b9c5;
+  --btn-bg: #d1d7df;
+  --btn-text: #133a4b;
+  --font-main: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        }
+body {
+  background-color: var(--bg-dark);
+  font-family: var(--font-main);
+  color: var(--text-primary);
+}
 
-        body {
-            background-color: #f7f9f6;
-            color: #1a2b3c;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
+/* Hero / Header Title */
+h1, .hero-title {
+  font-family: var(--font-main);
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
 
-        /* Header Section */
-        header {
-            background-color: #001f3f;
-            padding: 40px 20px;
-            text-align: center;
-            border-bottom: 2px solid #bdc3c7;
-        }
+/* Subtitle / Description */
+p.subtitle, .hero-subtitle {
+  font-family: var(--font-main);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  letter-spacing: 0.02em;
+  margin-bottom: 2rem;
+}
 
-        header h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.8rem;
-            color: #ffffff;
-            margin: 0;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
+/* Primary Action Button */
+.btn-primary, button {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  font-family: var(--font-main);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
 
-        header h2 {
-            font-family: 'Lato', sans-serif;
-            font-size: 1.1rem;
-            color: #bdc3c7;
-            font-weight: 300;
-            margin-top: 10px;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-        }
-
-        /* Introductory Heading */
-        .intro {
-            text-align: center;
-            padding: 60px 20px 40px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .intro h2 {
-            font-size: 2.2rem;
-            color: var(--deep-navy);
-            font-weight: 700;
-            margin-bottom: 16px;
-        }
-
-        .intro p {
-            font-size: 1.1rem;
-            color: #4a5568;
-            line-height: 1.6;
-        }
-
-        /* Main Card Container */
-        .card-container {
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-
-        /* Copper Card Styling */
-        .card {
-            background-color: #ffffff;
-            border-top: 4px solid var(--copper);
-            border-radius: 16px;
-            padding: 40px 30px;
-            max-width: 550px;
-            width: 100%;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-
-        /* Service List Font Styling */
-        .service-list {
-            list-style: none;
-            margin: 10px 0 28px;
-            text-align: center;
-        }
-
-        .service-list li {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: #1a2b3c;
-            margin: 16px 0;
-        }
-
-        /* Compact, Scaled Button */
-        .cta-button {
-            display: inline-block;
-            background-color: var(--copper);
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 0.85rem;
-            letter-spacing: 0.8px;
-            padding: 10px 24px;
-            border-radius: 22px;
-            margin-top: 8px;
-            transition: background-color 0.2s ease, transform 0.2s ease;
-        }
-
-        .cta-button:hover {
-            background-color: #a85f38;
-            transform: translateY(-2px);
-        }
-
+.btn-primary:hover {
+  opacity: 0.9;
+}
         /* 4-Badge Container Grid */
         .badges-container {
             display: flex;
