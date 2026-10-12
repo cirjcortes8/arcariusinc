@@ -40,10 +40,30 @@
 .badge-line {
   background-color: #c5a059;
 }    
-    body {
-  background-color: #0b131a;
-  color: #ffffff;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+   /* Dark Navy Page Body */
+body {
+  background-color: #0b131a !important;
+  color: #ffffff !important;
+}
+
+/* Service Card Container */
+.card, .services-container, .content-box {
+  background-color: #111b24 !important; /* Slightly lighter navy for contrast */
+  border: 1px solid #c5a059 !important;  /* Gold accent border */
+  color: #ffffff !important;
+}
+
+.card h2, .card h3 {
+  color: #c5a059 !important; /* Signature Gold heading */
+}
+
+/* Button Styling (Replaces Green with Gold) */
+.button, .btn, button, a.btn {
+  background-color: #c5a059 !important; /* Signature Gold */
+  color: #0b131a !important;            /* Dark text on gold button */
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
 }
     /* TOP HERO SECTION */
     .hero-section {
