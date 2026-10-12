@@ -11,6 +11,9 @@
       padding: 0;
       box-sizing: border-box;
     }
+    html {
+      scroll-behavior: smooth; /* Smooth scrolling when button is clicked */
+    }
     body {
       background-color: #0d121c; /* Dark navy background */
       color: #cbd5e1; /* Softened off-white text */
@@ -78,7 +81,7 @@
       border: 2px solid #000000; /* Black box border */
       border-radius: 24px;
       padding: 3rem 2rem;
-      max-width: 800px; /* Slightly wider to fit the headline on one line */
+      max-width: 800px;
       width: 100%;
       text-align: center;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 15px rgba(181, 148, 16, 0.15);
@@ -88,7 +91,7 @@
       font-weight: 600;
       color: #e2e8f0;
       margin-bottom: 1.5rem;
-      white-space: nowrap; /* Forces text into a single line */
+      white-space: nowrap;
     }
     .card-description {
       font-size: 1.15rem;
@@ -107,6 +110,7 @@
       text-decoration: none;
       border-radius: 30px;
       margin-top: 1.5rem;
+      cursor: pointer;
       transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
     }
     .cta-button:hover {
@@ -137,6 +141,28 @@
       height: auto;
       display: block;
       margin: 0 auto;
+    }
+
+    /* Contact / Inquiry Section */
+    .contact-section {
+      background-color: #1a2333;
+      border: 2px solid #b59410;
+      border-radius: 24px;
+      padding: 3rem 2rem;
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
+      margin: 0 auto 40px auto;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    .contact-section h3 {
+      font-size: 1.8rem;
+      color: #e2e8f0;
+      margin-bottom: 1rem;
+    }
+    .contact-section p {
+      color: #94a3b8;
+      font-size: 1.1rem;
     }
 
     /* Footer Section */
@@ -181,13 +207,19 @@
       <h2 class="card-title">Individual &amp; Business Tax Returns</h2>
       <p class="card-description">Entity Formation (LLC, S-Corp, C-Corp)</p>
       <p class="card-description">Official Notary Public Services</p>
-      <!-- Functional Email Link (Change 'contact@arcariusinc.com' to your actual email address) -->
-      <a href="mailto:contact@arcariusinc.com?subject=Inquiry%20Regarding%20Tax%20%26%20Notary%20Services" class="cta-button">Inquire About Rates &amp; Services</a>
+      <!-- Smooth scroll jump link -->
+      <a href="#contact" class="cta-button">Inquire About Rates &amp; Services</a>
     </div>
 
     <!-- Clean Badges Image Row -->
     <div class="badges-container">
       <img src="badges-row.png" alt="Intuit Academy Specialty Badges">
+    </div>
+
+    <!-- Contact Section Jump Target -->
+    <div id="contact" class="contact-section">
+      <h3>Get in Touch</h3>
+      <p>Ready to get started? Reach out to schedule your consultation or inquiry.</p>
     </div>
 
   </main>
