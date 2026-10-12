@@ -48,7 +48,7 @@
     }
     .hero-title {
       font-family: 'Times New Roman', Times, serif; /* Matching the logo serif font */
-      font-size: 3.5rem; /* Made slightly larger */
+      font-size: 3.5rem;
       font-weight: 700;
       color: #e2e8f0;
       margin-bottom: 1.2rem;
@@ -72,22 +72,23 @@
       gap: 50px;
     }
 
-    /* Pricing / Service Card with Black Border Box */
+    /* Pricing / Service Card */
     .pricing-card {
       background-color: #1a2333;
       border: 2px solid #000000; /* Black box border */
-      border-radius: 24px; /* Smooth rounded corners */
-      padding: 3rem;
-      max-width: 700px;
+      border-radius: 24px;
+      padding: 3rem 2rem;
+      max-width: 800px; /* Slightly wider to fit the headline on one line */
       width: 100%;
       text-align: center;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 15px rgba(181, 148, 16, 0.15); /* Subtle gold glow */
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 15px rgba(181, 148, 16, 0.15);
     }
     .card-title {
-      font-size: 2.25rem;
+      font-size: 2rem;
       font-weight: 600;
       color: #e2e8f0;
       margin-bottom: 1.5rem;
+      white-space: nowrap; /* Forces text into a single line */
     }
     .card-description {
       font-size: 1.15rem;
@@ -98,13 +99,13 @@
       display: inline-block;
       background-color: transparent;
       color: #e2e8f0;
-      border: 2px solid #b59410; /* Changed from black to gold border */
+      border: 2px solid #b59410; /* Gold border */
       padding: 1rem 2.5rem;
       font-size: 1rem;
       font-weight: 600;
       text-transform: uppercase;
       text-decoration: none;
-      border-radius: 30px; /* Fully rounded pill shape */
+      border-radius: 30px;
       margin-top: 1.5rem;
       transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
     }
@@ -112,6 +113,16 @@
       background-color: #b59410;
       border-color: #b59410;
       color: #0d121c;
+    }
+
+    /* Responsive adjustment for mobile screens */
+    @media (max-width: 768px) {
+      .card-title {
+        font-size: 1.35rem;
+      }
+      .hero-title {
+        font-size: 2.5rem;
+      }
     }
 
     /* Badges Container */
@@ -167,24 +178,6 @@
     
     <!-- Service Card -->
     <div class="pricing-card">
-      <h2 class="card-title">Individual & Business Tax Returns</h2>
+      <h2 class="card-title">Individual &amp; Business Tax Returns</h2>
       <p class="card-description">Entity Formation (LLC, S-Corp, C-Corp)</p>
-      <p class="card-description">Official Notary Public Services</p>
-      <a href="#contact" class="cta-button">Inquire About Rates & Services</a>
-    </div>
-
-    <!-- Clean Badges Image Row -->
-    <div class="badges-container">
-      <img src="badges-row.png" alt="Intuit Academy Specialty Badges">
-    </div>
-
-  </main>
-
-  <!-- FOOTER SECTION -->
-  <footer class="footer-section">
-    <div class="footer-brand">Arcarius Inc | Boutique Tax Strategy</div>
-    <p class="footer-legal">&copy; 2026 Arcarius Inc. Authorized IRS & NVTG e-file Provider.</p>
-  </footer>
-
-</body>
-</html>
+      <p class="card-description">Official Notary Public Services</p
