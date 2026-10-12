@@ -12,7 +12,7 @@
       box-sizing: border-box;
     }
     html {
-      scroll-behavior: smooth; /* Smooth scrolling when button is clicked */
+      scroll-behavior: smooth;
     }
     body {
       background-color: #0d121c; /* Dark navy background */
@@ -32,7 +32,7 @@
       width: 130px;
       height: 130px;
       border-radius: 50%;
-      border: 2px solid #000000; /* Black border frame */
+      border: 2px solid #000000;
       overflow: hidden;
       background-color: #0d121c;
       box-shadow: 0 8px 25px rgba(0,0,0,0.7);
@@ -50,7 +50,7 @@
       text-align: center;
     }
     .hero-title {
-      font-family: 'Times New Roman', Times, serif; /* Matching the logo serif font */
+      font-family: 'Times New Roman', Times, serif;
       font-size: 3.5rem;
       font-weight: 700;
       color: #e2e8f0;
@@ -78,7 +78,7 @@
     /* Pricing / Service Card */
     .pricing-card {
       background-color: #1a2333;
-      border: 2px solid #000000; /* Black box border */
+      border: 2px solid #000000;
       border-radius: 24px;
       padding: 3rem 2rem;
       max-width: 800px;
@@ -91,7 +91,7 @@
       font-weight: 600;
       color: #e2e8f0;
       margin-bottom: 1.5rem;
-      white-space: nowrap;
+      line-height: 1.3;
     }
     .card-description {
       font-size: 1.15rem;
@@ -102,7 +102,7 @@
       display: inline-block;
       background-color: transparent;
       color: #e2e8f0;
-      border: 2px solid #b59410; /* Gold border */
+      border: 2px solid #b59410;
       padding: 1rem 2.5rem;
       font-size: 1rem;
       font-weight: 600;
@@ -119,13 +119,17 @@
       color: #0d121c;
     }
 
-    /* Responsive adjustment for mobile screens */
+    /* Responsive adjustments for mobile / iPhone screens */
     @media (max-width: 768px) {
-      .card-title {
-        font-size: 1.35rem;
-      }
       .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        letter-spacing: 0.1em;
+      }
+      .card-title {
+        font-size: 1.5rem;
+      }
+      .pricing-card {
+        padding: 2rem 1.25rem;
       }
     }
 
@@ -204,10 +208,9 @@
     
     <!-- Service Card -->
     <div class="pricing-card">
-      <h2 class="card-title">Individual &amp; Business Tax Returns</h2>
+      <h2 class="card-title">Individual &amp; Business <br>Tax Returns</h2>
       <p class="card-description">Entity Formation (LLC, S-Corp, C-Corp)</p>
       <p class="card-description">Official Notary Public Services</p>
-      <!-- Smooth scroll jump link -->
       <a href="#contact" class="cta-button">Inquire About Rates &amp; Services</a>
     </div>
 
