@@ -167,17 +167,19 @@
       max-width: 800px;
     }
 
-    .badge-item {
-      background: transparent;
-      border: none;
-      box-shadow: none;
-      padding: 0;
-      transition: transform 0.2s ease;
-    }
+ .badge-item {
+  background-color: #111b24;
+  border: 1px solid #c5a059;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
 
-    .badge-item:hover {
-      transform: translateY(-2px);
-    }
+.badge-item:hover {
+  transform: translateY(-3px);
+  border-color: #d4af66;
+}
 
     .badge-item img {
       width: 72px;
