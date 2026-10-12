@@ -4,261 +4,171 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arcarius Inc | Boutique Tax Strategy</title>
-
   <style>
+    /* Reset and Base Styles */
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
-
     body {
-      background-color: #0b131a;
+      background-color: #0d121c; /* Dark navy background */
       color: #ffffff;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    }
-
-    /* ARCARIUS LOGO BADGE */
-    .brand-badge {
-      display: inline-flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: #111b24;
-      border: 2px solid #c5a059;
-      border-radius: 50%;
-      width: 130px;
-      height: 130px;
-      margin: 0 auto 1.5rem auto;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-    }
-
-    .badge-bars {
-      display: flex;
-      align-items: flex-end;
-      gap: 5px;
-      margin-bottom: 6px;
-    }
-
-    .bar-1 {
-      width: 3px;
-      height: 8px;
-      background-color: #2b3a4a !important;
-      border-radius: 1px;
-    }
-
-    .bar-2 {
-      width: 3px;
-      height: 14px;
-      background-color: #c5a059 !important;
-      border-radius: 1px;
-    }
-
-    .bar-3 {
-      width: 3px;
-      height: 22px;
-      background-color: #4a5d6e !important;
-      border-radius: 1px;
-    }
-
-    .badge-text {
-      font-family: "Times New Roman", Times, serif;
-      letter-spacing: 2.5px;
-      color: #ffffff;
-      font-size: 0.8rem;
-      font-weight: 500;
-      margin-bottom: 4px;
-    }
-
-    .badge-line {
-      width: 22px;
-      height: 2px;
-      background-color: #c5a059;
-      border-radius: 1px;
-    }
-
-    /* TOP HERO SECTION */
-    .hero-section {
-      background-color: #0b131a;
-      padding: 5rem 1.5rem 4rem;
-      text-align: center;
-    }
-
-    .hero-title {
-      font-size: 2.8rem;
-      font-weight: 700;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: #ffffff;
-      margin-bottom: 1.25rem;
-    }
-
-    .hero-subtitle {
-      font-size: 1.15rem;
-      color: #a0aec0;
-      max-width: 600px;
-      margin: 0 auto 2rem auto;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
     }
-
-    /* MIDDLE CONTENT SECTION */
-    .middle-section {
-      background-color: #0b131a;
-      padding: 4rem 1.5rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 3.5rem;
-    }
-
-    /* ROADMAP / PRICING CARD */
-    .card-container {
-      background-color: #111b24;
-      border-radius: 18px;
-      border: 1px solid #c5a059;
-      border-top: 6px solid #c5a059;
-      padding: 3rem 2.5rem;
-      max-width: 680px;
+    /* Logo Container */
+    .logo-container {
       width: 100%;
       text-align: center;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      padding: 60px 0 20px 0;
     }
-
-    .card-title {
-      font-size: 1.8rem;
+    .logo-container img {
+      width: 150px;
+      height: 150px;
+      display: inline-block;
+    }
+    /* Hero Section */
+    .hero-section {
+      background-color: #0d121c;
+      padding: 20px 1.5rem 80px 1.5rem;
+      text-align: center;
+    }
+    .hero-title {
+      font-size: 3rem;
       font-weight: 700;
-      color: #c5a059;
+      color: #ffffff;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.15em; /* Spaced out text for ARCARIUS INC */
+      text-transform: uppercase;
+    }
+    .hero-subtitle {
+      font-size: 1.25rem;
+      color: #8da2b5;
+      max-width: 600px;
+      margin: 0 auto;
+      margin-bottom: 3rem;
+    }
+    /* Content Section */
+    .main-content {
+      background-color: #0d121c;
+      padding: 0 1.5rem;
+    }
+    /* Pricing / Service Card */
+    .pricing-card {
+      background-color: #1a2333; /* Slightly lighter navy for the card */
+      border: 2px solid #b59410; /* Gold/Bronze border */
+      border-radius: 12px;
+      padding: 3rem;
+      max-width: 700px;
+      margin: 0 auto 60px auto;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    .card-title {
+      font-size: 2.25rem;
+      font-weight: 600;
+      color: #ffffff;
       margin-bottom: 1.5rem;
     }
-
     .card-description {
-      font-size: 1.1rem;
-      color: #e2e8f0;
-      margin-bottom: 1rem;
-      line-height: 1.6;
+      font-size: 1.15rem;
+      color: #8da2b5;
+      margin-bottom: 2.5rem;
     }
-
     .cta-button {
       display: inline-block;
-      background-color: #c5a059;
-      color: #0b131a;
-      font-weight: 700;
-      padding: 1rem 2rem;
-      border-radius: 30px;
-      text-decoration: none;
+      background-color: transparent;
+      color: #ffffff;
+      border: 2px solid #ffffff;
+      padding: 1rem 2.5rem;
+      font-size: 1rem;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-top: 1.5rem;
-      transition: background-color 0.2s ease, transform 0.2s ease;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
-
     .cta-button:hover {
-      background-color: #d4af66;
-      transform: translateY(-2px);
+      background-color: #ffffff;
+      color: #0d121c;
     }
-
-    /* BADGES GRID */
-    .badges-grid {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-      max-width: 800px;
+    /* Accreditations Grid */
+    .accreditations-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      max-width: 900px;
+      margin: 0 auto 80px auto;
     }
-
- .badge-item {
-  background-color: #111b24;
-  border: 1px solid #c5a059;
-  border-radius: 12px;
-  padding: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s ease, border-color 0.2s ease;
-}
-
-.badge-item:hover {
-  transform: translateY(-3px);
-  border-color: #d4af66;
-}
-
-    .badge-item img {
-      width: 72px;
-      height: auto;
-      display: block;
-      filter: grayscale(100%) opacity(0.85);
-      transition: filter 0.2s ease;
-    }
-
-    .badge-item:hover img {
-      filter: grayscale(100%) opacity(1);
-    }
-
-    /* FOOTER SECTION */
-    .footer-section {
-      background-color: #0b131a;
-      border-top: 1px solid #1a2634;
-      padding: 3rem 1.5rem 2rem;
+    .accreditation-item {
       text-align: center;
-      color: #a0aec0;
-      font-size: 0.9rem;
     }
-
+    .accreditation-item img {
+      width: 100px;
+      height: 100px;
+      filter: grayscale(100%) brightness(150%); /* For a clean, unified look */
+      margin-bottom: 10px;
+    }
+    /* Footer Section */
+    .footer-section {
+      background-color: #0d121c;
+      padding: 4rem 1.5rem 2rem 1.5rem;
+      text-align: center;
+      border-top: 1px solid #1a2333;
+    }
     .footer-brand {
-      color: #c5a059;
+      color: #ffffff;
+      font-size: 1.25rem;
       font-weight: 600;
       margin-bottom: 1rem;
     }
-
     .footer-legal {
-      margin-top: 1.5rem;
-      font-size: 0.8rem;
-      color: #718096;
+      font-size: 0.85rem;
+      color: #5c6c7b;
     }
   </style>
 </head>
 <body>
 
+  <!-- Logo Container -->
+  <div class="logo-container">
+    <img src="arcariuslogo.png" alt="Arcarius Inc Logo">
+  </div>
+
   <!-- HERO SECTION -->
   <section class="hero-section">
-    <div class="brand-badge">
-      <div class="badge-bars">
-        <div class="bar-1"></div>
-        <div class="bar-2"></div>
-        <div class="bar-3"></div>
-      </div>
-      <div class="badge-text">ARCARIUS</div>
-      <div class="badge-line"></div>
-    </div>
-
     <h1 class="hero-title">ARCARIUS INC</h1>
     <p class="hero-subtitle">Boutique S-Corp Strategy & Tax Compliance for Modern Founders</p>
   </section>
 
-  <!-- MIDDLE SECTION -->
-  <section class="middle-section">
-    <div class="card-container">
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+    
+    <!-- Service / Pricing Card -->
+    <div class="pricing-card">
       <h2 class="card-title">Individual & Business Tax Returns</h2>
       <p class="card-description">Entity Formation (LLC, S-Corp, C-Corp)</p>
-      <p class="card-description">Official Notary Public Services</p>
       <a href="#contact" class="cta-button">Inquire About Rates & Services</a>
     </div>
 
-    <!-- BADGES GRID -->
-    <div class="badges-grid">
-      <div class="badge-item">
-        <img src="badge-business-tax.png" alt="Business Tax Specialty">
+    <!-- Accreditations Grid -->
+    <div class="accreditations-grid">
+      <div class="accreditation-item">
+        <img src="badge-irs-provider.png" alt="IRS Authorized E-File Provider">
       </div>
-      <div class="badge-item">
-        <img src="badge-crypto-tax.png" alt="Cryptocurrency Tax Specialty">
+      <div class="accreditation-item">
+        <img src="badge-cpa.png" alt="Certified Public Accountant">
       </div>
-      <div class="badge-item">
-        <img src="badge-equity.tax.png" alt="Equity Compensation Tax Specialty">
+      <div class="accreditation-item">
+        <img src="badge-notary.png" alt="Notary Public Official">
       </div>
-      <div class="badge-item">
-        <img src="badge-planning-tax.png" alt="Tax Planning Strategies">
+      <div class="accreditation-item">
+        <img src="badge-nvtg.png" alt="NVTG Member">
       </div>
     </div>
-  </section>
+
+  </main>
 
   <!-- FOOTER SECTION -->
   <footer class="footer-section">
